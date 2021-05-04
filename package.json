@@ -1,14 +1,10 @@
 {
-  "name": "vue-dadata",
+  "name": "vue-dadata-bs",
   "version": "1.4.11",
   "description": "Vue component for hinting addresses using dadata.ru",
   "main": "dist/vuedadatacomponent.umd.js",
   "module": "dist/vuedadatacomponent.esm.js",
   "unpkg": "dist/vuedadatacomponent.min.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ikloster03/vue-dadata.git"
-  },
   "keywords": [
     "vue",
     "ts",
