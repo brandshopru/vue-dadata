@@ -54,7 +54,7 @@ import Highlighter from 'vue-highlight-words';
 import { Debounce } from 'vue-debounce-decorator';
 
 @Component({
-  name: 'VueDadata',
+  name: 'VueDadataBs',
   components: {
     Highlighter,
   },

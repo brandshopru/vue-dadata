@@ -1,6 +1,6 @@
 # Changelog
 
-[Link to RU changelog](https://github.com/ikloster03/vue-dadata/tree/master/ru/CHANGELOG.md)
+[Link to RU changelog](https://github.com/brandshopru/vue-dadata/tree/master/ru/CHANGELOG.md)
 
 ## v1.4.6 - June 06, 2020
 

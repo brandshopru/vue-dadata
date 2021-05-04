@@ -1,11 +1,11 @@
-import VueDadata from './components/VueDadata.vue';
+import VueDadataBs from './components/VueDadataBs.vue';
 
 const install = Vue => {
   if (install.installed) {
     return;
   }
   install.installed = true;
-  Vue.component('vue-dadata-bs', VueDadata);
+  Vue.component('vue-dadata-bs', VueDadataBs);
 };
 
 const plugin = {
@@ -24,6 +24,6 @@ if (GlobalVue) {
   GlobalVue.use(plugin);
 }
 
-VueDadata.install = install;
+VueDadataBs.install = install;
 
-export default VueDadata;
+export default VueDadataBs;
