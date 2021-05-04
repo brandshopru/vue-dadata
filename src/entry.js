@@ -5,7 +5,7 @@ const install = Vue => {
     return;
   }
   install.installed = true;
-  Vue.component('vue-dadata', VueDadata);
+  Vue.component('vue-dadata-bs', VueDadata);
 };
 
 const plugin = {
