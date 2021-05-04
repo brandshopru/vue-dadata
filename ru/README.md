@@ -1,24 +1,18 @@
 # Vue Dadata
 
-![Publish](https://github.com/ikloster03/vue-dadata/workflows/Publish/badge.svg)
+![Publish](https://github.com/brandshopru/vue-dadata/workflows/Publish/badge.svg)
 [![gitlocalized ](https://gitlocalize.com/repo/3342/whole_project/badge.svg)](https://gitlocalize.com/repo/3342/whole_project?utm_source=badge)
 
 Это vue компонент для подсказок с использованием сервиса [DaData.ru](https://dadata.ru).
 
-[Ссылка на EN документацию](https://github.com/ikloster03/vue-dadata/tree/master/README.md)
+[Ссылка на EN документацию](https://github.com/brandshopru/vue-dadata/tree/master/README.md)
 
 ## Установка
 
 [npm package](https://www.npmjs.com/package/vue-dadata)
 
 ```bash
-$ npm install vue-dadata --save
-```
-
-[yarn package](https://yarnpkg.com/en/package/vue-dadata)
-
-```bash
-$ yarn add vue-dadata
+$ npm install vue-dadata-bs --save
 ```
 
 ## Применение
@@ -26,27 +20,30 @@ $ yarn add vue-dadata
 ### Глобальный импорт
 
 ```js
-import VueDadata from 'vue-dadata'  Vue.use(VueDadata)
+import VueDadata from 'vue-dadata-bs'
+
+Vue.use(VueDadataBs)
 ```
 
 ### Локальный импорт
 
 ```html
+
 <template>
   <div id="app">
-    <vue-dadata token="dadata_api_key"></vue-dadata>
+    <vue-dadata-bs token="dadata_api_key"></vue-dadata-bs>
   </div>
 </template>
 
 <script>
-import VueDadata from 'vue-dadata'
+  import VueDadataBs from 'vue-dadata-bs'
 
-export default {
-  name: 'VueDadataTest',
-  components: {
-    'vue-dadata': VueDadata
+  export default {
+    name: 'VueDadataTest',
+    components: {
+      'vue-dadata': VueDadataBs
+    }
   }
-}
 </script>
 ```
 
@@ -82,37 +79,20 @@ locationOptions | Нет | object | Варианты расположения д
 
 ## Отчет о проблемах
 
-Если вы обнаружили ошибку или у вас есть запрос на добавление функции, сообщите об этом в [разделе проблем с](https://github.com/ikloster03/vue-dadata/issues) хранилищем.
+Если вы обнаружили ошибку или у вас есть запрос на добавление функции, сообщите об этом в [разделе проблем с](https://github.com/brandshopru/vue-dadata/issues) хранилищем.
 
 ## Собираемся сделать
 
-[Показать проект Vue Dadata](https://github.com/ikloster03/vue-dadata/projects/1)
+[Показать проект Vue Dadata](https://github.com/brandshopru/vue-dadata/projects/1)
 
 ## Основные этапы
 
-[Показать основные этапы](https://github.com/ikloster03/vue-dadata/milestones)
-
-## Свяжитесь со мной
-
-- Сайт: [ikloster.ru](http://ikloster.ru)
-- E-mail: [ikloster@yandex.ru](mailto:ikloster@yandex.ru)
-- Twitter: [twitter.com/IvanMonastyrev](https://twitter.com/IvanMonastyrev)
-
-## Авторы
-
-- [Valery Roshett](https://github.com/Roshett)
-- [Ilya Kiselev](https://github.com/kiselev-webdev)
+[Показать основные этапы](https://github.com/brandshopru/vue-dadata/milestones)
 
 ##
 
-[CHANGELOG](https://github.com/ikloster03/vue-dadata/blob/master/CHANGELOG.md)
+[CHANGELOG](https://github.com/brandshopru/vue-dadata/blob/master/CHANGELOG.md)
 
 ##
 
-[CONTRIBUTING](https://github.com/ikloster03/vue-dadata/blob/master/CONTRIBUTING.md)
-
-##
-
-[ЛИЦЕНЗИЯ](https://github.com/ikloster03/vue-dadata/blob/master/LICENSE)
-
-Copyright (c) 2019 Иван Монастырев [ikloster@yandex.ru](mailto:ikloster@yandex.ru) . Лицензировано по [лицензии MIT](https://github.com/ikloster03/vue-dadata/blob/master/LICENSE) .
+[CONTRIBUTING](https://github.com/brandshopru/vue-dadata/blob/master/CONTRIBUTING.md)

@@ -5,7 +5,7 @@
       :token="token"
       @handle-error="handleError"
       input-name="vue-dadata"
-      from-bound="region"
+      from-bound="street"
       to-bound="house"
       highlight-class-name="vue-dadata__highlight"
       unhighlight-class-name="vue-dadata__unhighlight"
@@ -31,13 +31,11 @@ export default class App extends Vue {
   public locations = {
     language: 'ru',
     locations: [
-      // {
-      //   region: 'москва',
-      // },
       {
-        country: '*',
+        "country_iso_code": 'RU'
       },
     ],
+    restrictValue: true
   };
 
   @Ref('dadata') readonly dadata!: any;
