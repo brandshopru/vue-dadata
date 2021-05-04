@@ -1,6 +1,6 @@
 {
   "name": "vue-dadata-bs",
-  "version": "1.4.11",
+  "version": "1.4.12",
   "description": "Vue component for hinting addresses using dadata.ru",
   "main": "dist/vuedadatacomponent.umd.js",
   "module": "dist/vuedadatacomponent.esm.js",
@@ -13,23 +13,15 @@
     "suggestion"
   ],
   "author": {
-    "name": "Ivan Monastyrev",
-    "email": "ikloster@yandex.ru",
-    "url": "https://ikloster.ru"
+    "name": "Brandshop",
+    "email": "volodya@brandshop.ru",
+    "url": "https://brandshop.ru"
   },
-  "contributors": [
-    {
-      "name": "Valery Roshett"
-    },
-    {
-      "name": "Ilya Kiselev"
-    }
-  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ikloster03/vue-dadata/issues"
+    "url": "https://github.com/brandshopru/vue-dadata/issues"
   },
-  "homepage": "https://github.com/ikloster03/vue-dadata#readme",
+  "homepage": "https://github.com/brandshopru/vue-dadata#readme",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

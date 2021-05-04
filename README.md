@@ -1,23 +1,18 @@
 # Vue Dadata
 
-![Publish](https://github.com/ikloster03/vue-dadata/workflows/Publish/badge.svg)
+![Publish](https://github.com/brandshopru/vue-dadata/workflows/Publish/badge.svg)
 [![gitlocalized ](https://gitlocalize.com/repo/3342/whole_project/badge.svg)](https://gitlocalize.com/repo/3342/whole_project?utm_source=badge)
 
 It's a vue component for hinting addresses using [DaData.ru](https://dadata.ru).
 
-[Link to RU documentation](https://github.com/ikloster03/vue-dadata/tree/master/ru/README.md)
+[Link to RU documentation](https://github.com/brandshopru/vue-dadata/tree/master/ru/README.md)
 
 ## Install
 
 [npm package](https://www.npmjs.com/package/vue-dadata)
 
 ```bash
-$ npm install vue-dadata --save
-```
-
-[yarn package](https://yarnpkg.com/en/package/vue-dadata)
-```bash
-$ yarn add vue-dadata
+$ npm install vue-dadata-bs --save
 ```
 
 ## Usage
@@ -25,7 +20,7 @@ $ yarn add vue-dadata
 ### Global
 
 ```js
-import VueDadata from 'vue-dadata'
+import VueDadata from 'vue-dadata-bs'
 
 Vue.use(VueDadata)
 ```
@@ -33,6 +28,7 @@ Vue.use(VueDadata)
 ### Local
 
 ```html
+
 <template>
   <div id="app">
     <vue-dadata token="dadata_api_key"></vue-dadata>
@@ -40,14 +36,14 @@ Vue.use(VueDadata)
 </template>
 
 <script>
-import VueDadata from 'vue-dadata'
+  import VueDadata from 'vue-dadata'
 
-export default {
-  name: 'VueDadataTest',
-  components: {
-    'vue-dadata': VueDadata
+  export default {
+    name: 'VueDadataTest',
+    components: {
+      'vue-dadata': VueDadata
+    }
   }
-}
 </script>
 ```
 
@@ -71,7 +67,6 @@ export default {
 | highlightTag  | No  |  string  |  Type of tag to wrap around highlighted matches; defaults to `mark` but can also be a component |
 | locationOptions  | No  |  object  |  Location options for choosing cities or countries |
 
-
 ## Dependencies
 
 - [axios](https://github.com/axios/axios)
@@ -84,31 +79,18 @@ export default {
 
 ## Issue Reporting
 
-If you have found a bug or if you have a feature request, please report them at this repository [issues section](https://github.com/ikloster03/vue-dadata/issues).
+If you have found a bug or if you have a feature request, please report them at this repository [issues section](https://github.com/brandshopru/vue-dadata/issues).
 
 ## ToDo
 
-[Show project Vue Dadata](https://github.com/ikloster03/vue-dadata/projects/1)
+[Show project Vue Dadata](https://github.com/brandshopru/vue-dadata/projects/1)
 
 ## Milestones
 
-[Show milestones](https://github.com/ikloster03/vue-dadata/milestones)
+[Show milestones](https://github.com/brandshopru/vue-dadata/milestones)
 
-## Contact me
+## [CHANGELOG](https://github.com/brandshopru/vue-dadata/blob/master/CHANGELOG.md)
 
-- Site: [ikloster.ru](http://ikloster.ru)
-- E-mail: <ikloster@yandex.ru>
-- Twitter: [twitter.com/IvanMonastyrev](https://twitter.com/IvanMonastyrev)
+## [CONTRIBUTING](https://github.com/brandshopru/vue-dadata/blob/master/CONTRIBUTING.md)
 
-## Contributors
-
-- [Valery Roshett](https://github.com/Roshett)
-- [Ilya Kiselev](https://github.com/kiselev-webdev)
-
-## [CHANGELOG](https://github.com/ikloster03/vue-dadata/blob/master/CHANGELOG.md)
-
-## [CONTRIBUTING](https://github.com/ikloster03/vue-dadata/blob/master/CONTRIBUTING.md)
-
-## [LICENSE](https://github.com/ikloster03/vue-dadata/blob/master/LICENSE)
-
-Copyright (c) 2019 Ivan Monastyrev <ikloster@yandex.ru>. Licensed under the [MIT license](https://github.com/ikloster03/vue-dadata/blob/master/LICENSE).
+## [LICENSE](https://github.com/brandshopru/vue-dadata/blob/master/LICENSE)
