@@ -1,16 +1,17 @@
 {
   "name": "vue-dadata-bs",
-  "version": "1.4.15",
+  "version": "1.4.17",
   "description": "Vue component for hinting addresses using dadata.ru",
-  "main": "dist/vuedadatacomponent.umd.js",
-  "module": "dist/vuedadatacomponent.esm.js",
-  "unpkg": "dist/vuedadatacomponent.min.js",
+  "main": "dist/vuedadatabscomponent.umd.js",
+  "module": "dist/vuedadatabscomponent.esm.js",
+  "unpkg": "dist/vuedadatabscomponent.min.js",
   "keywords": [
     "vue",
     "ts",
     "typescript",
     "dadata",
-    "suggestion"
+    "suggestion",
+    "brandshop"
   ],
   "author": {
     "name": "Brandshop",
