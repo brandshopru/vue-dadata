@@ -1,6 +1,6 @@
 {
   "name": "vue-dadata-bs",
-  "version": "1.4.17",
+  "version": "1.5.32",
   "description": "Vue component for hinting addresses using dadata.ru",
   "main": "dist/vuedadatabscomponent.umd.js",
   "module": "dist/vuedadatabscomponent.esm.js",

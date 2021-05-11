@@ -41,12 +41,14 @@
         />
       </div>
     </div>
+
   </div>
+
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from 'vue-property-decorator';
-import { BoundsType } from '@/types/DadataAddress';
+import {Component, Vue, Prop} from 'vue-property-decorator';
+import {BoundsType} from '@/types/DadataAddress';
 import DadataSuggestion from '@/types/DadataSuggestion';
 import LocationOptions from '@/types/LocationOptions';
 import getSuggestions from '@/api/getSuggestions';
@@ -60,7 +62,7 @@ import { Debounce } from 'vue-debounce-decorator';
   },
 })
 export default class VueDadata extends Vue {
-  @Prop({ type: String, required: true }) public readonly token!: string;
+  @Prop({type: String, required: true}) public readonly token!: string;
   @Prop(String) public readonly query?: string;
   @Prop(String) public readonly placeholder?: string;
   @Prop(Boolean) public readonly autoload?: boolean;
@@ -83,18 +85,18 @@ export default class VueDadata extends Vue {
   public readonly locationOptions!: LocationOptions;
   @Prop(String) public readonly highlightClassName?: string;
   @Prop(String) public readonly unhighlightClassName?: string;
-  @Prop({ type: String, default: 'mark' })
+  @Prop({type: String, default: 'mark'})
   public readonly highlightTag?: string;
-  @Prop({ type: String, default: 'vue-dadata' })
+  @Prop({type: String, default: 'vue-dadata'})
   public readonly defaultClass?: string;
-  @Prop({ type: String, default: '' }) public readonly classes?: string;
+  @Prop({type: String, default: ''}) public readonly classes?: string;
   @Prop(Function) public readonly onChange?: (
     suggestion: DadataSuggestion | null,
   ) => void;
   @Prop(Function) public readonly validate?: (value: string) => void;
 
   public inputQuery = '';
-  public inputFocused = false;
+  public inputFocused = true;
   public suggestions: DadataSuggestion[] = [];
   public suggestionIndex = -1;
   public suggestionsVisible = true;
@@ -183,7 +185,9 @@ export default class VueDadata extends Vue {
   }
 
   public async onSuggestionClick(index: number) {
-    await this.selectSuggestion(index);
+    setTimeout(()=>{
+      this.selectSuggestion(index);
+    },10);
   }
 
   private async fetchSuggestions(count?: number): Promise<DadataSuggestion[]> {
@@ -229,7 +233,7 @@ export default class VueDadata extends Vue {
 
     &:focus {
       box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
-        0 0 0 3px rgba(255, 154, 0, 0.1);
+      0 0 0 3px rgba(255, 154, 0, 0.1);
       border-color: #ff931e;
     }
   }

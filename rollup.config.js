@@ -49,19 +49,19 @@ export default {
   input: 'src/entry.js',
   output: [
     {
-      file: 'dist/vuedadatacomponent.esm.js',
+      file: 'dist/vuedadatabscomponent.esm.js',
       format: 'esm',
-      name: 'vueDadata'
+      name: 'vueDadataBs'
     },
     {
-      file: 'dist/vuedadatacomponent.umd.js',
+      file: 'dist/vuedadatabscomponent.umd.js',
       format: 'umd',
-      name: 'vueDadata'
+      name: 'vueDadataBs'
     },
     {
-      file: 'dist/vuedadatacomponent.min.js',
+      file: 'dist/vuedadatabscomponent.min.js',
       format: 'iife',
-      name: 'vueDadata'
+      name: 'vueDadataBs'
     },
   ],
   sourcemap: true,
